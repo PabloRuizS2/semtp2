@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}SisVentas{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper text-center">
+    <h1>¡Bienvenido a SisVentas!</h1>
+    
+    <p>Seleccione una opción del menú para continuar o...</p>
+    
+    <a href="{{ path('app_venta_new') }}" class="btn btn-dark btn-lg mt-3">🛒 Comenzar a vender</a>
+</div>
+{% endblock %}
